@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{41AE03BB-0893-4FFE-875E-BF6BA9B739D6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProjetoTurismooo</RootNamespace>
+    <AssemblyName>ProjetoTurismooo</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cadastroCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastroCliente.Designer.cs">
+      <DependentUpon>cadastroCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cadastroFunc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastroFunc.Designer.cs">
+      <DependentUpon>cadastroFunc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cadastroPacote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastroPacote.Designer.cs">
+      <DependentUpon>cadastroPacote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consultaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consultaCliente.Designer.cs">
+      <DependentUpon>consultaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consultaFunc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consultaFunc.Designer.cs">
+      <DependentUpon>consultaFunc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consultaPacote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consultaPacote.Designer.cs">
+      <DependentUpon>consultaPacote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formPrincipal.Designer.cs">
+      <DependentUpon>formPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="vendaPacote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vendaPacote.Designer.cs">
+      <DependentUpon>vendaPacote.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="cadastroCliente.resx">
+      <DependentUpon>cadastroCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cadastroFunc.resx">
+      <DependentUpon>cadastroFunc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cadastroPacote.resx">
+      <DependentUpon>cadastroPacote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consultaCliente.resx">
+      <DependentUpon>consultaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consultaFunc.resx">
+      <DependentUpon>consultaFunc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consultaPacote.resx">
+      <DependentUpon>consultaPacote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formPrincipal.resx">
+      <DependentUpon>formPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="vendaPacote.resx">
+      <DependentUpon>vendaPacote.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_058_CircledArrowRight_183187.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_eraser_1608679.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_exit_2639810.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_photo_370076.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_photo_370076 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_back_322419.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_key_309058.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_key_309058 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_key_309058 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_38_user_id_login_image_4307864.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Rounded-31_2024644.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_user_close_add_103747.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_user_close_add_103747 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_user-red-add_60136.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_11_171503.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_eraser_16086791.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_plus_1814113.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_plus_1814113 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_document_text_add_103511.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_document_text_add_103511 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\praia-da-bombaca.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telaSplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telaSplashh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_format-indent-more_118758.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_format-indent-more_118758 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_format-indent-more_118758 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_format-indent-more_118758 %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_format-indent-more_1187581.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_question-fill_3017957.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_question-fill_3017957 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_question-fill_3017957 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_business_finance_money-43_2784226.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_business_finance_money-43_2784226 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Marketing_Icon_Outline-17_4579059.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_001_95895.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_001_95895 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_user-check_2561492 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_icon-144-box-bookmark_314260.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_icon-144-box-bookmark_314260 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_format-indent-more_118758 %281%293.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_gears_cogs_1891411.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_sign-out_298869.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_user3_216779.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_user3_2167791.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_popular_56_5366010.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_popular_56_5366010 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_popular_56_5366010 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_back_3224191.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_process-loop-arrow-action-step_3209447.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_941-32_4619651.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Streamline-70_185090.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_UI_Basic_GLYPH-48_4733376.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_UI_Basic_GLYPH-47_4733377.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_calendar-clock_299096 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_calendar-clock_299096 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CVC-Viagens.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logofooter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seguro-viagem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_941-32_4619651 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo watermellow BONITA.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
